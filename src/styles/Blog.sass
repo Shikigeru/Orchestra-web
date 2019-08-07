@@ -1,0 +1,57 @@
+.blog
+    .blog-item
+        padding: 30px
+        margin-bottom: 20px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        .thumb-img
+            width: 30%
+        .blog-preview-text
+            width: 67%
+            margin-left: 20px
+        .blog-item-tile
+            display: flex
+            justify-content: flex-start
+            width: 100%
+            color: #2196f3
+            text-decoration: none
+            &:hover
+                color: #1976d2
+        h2
+            margin-bottom: 10px
+        img
+            margin-right: 20px
+            border-radius: 5px
+            max-width: 100%
+        p
+            margin-bottom: 10px
+            &:last-child
+        a
+            display: flex
+            width: 150px
+            justify-content: center
+
+@media screen and (max-width: 810px)
+    .blog
+        .blog-item
+            align-items: center
+            justify-content: center
+            .thumb-img
+                min-width: 100%
+                text-align: center
+                margin-bottom: 20px
+            .blog-preview-text
+                min-width: 100%
+                text-align: justify
+                margin-left: 0
+                h2
+                    text-align: center
+                p
+                    margin-bottom: 20px
+                .center
+                    display: flex
+                    justify-content: center
+                    align-items: center
+        
+        

@@ -1,0 +1,19 @@
+.top-slider
+    position: relative
+
+.lira
+    position: absolute
+    z-index: 3
+    right: 0
+    img
+        width: 200px
+        &:nth-child(1)
+            position: absolute
+            right: 0
+            animation: rotation 30s linear infinite
+        &:nth-child(2)
+            position: absolute
+
+@keyframes rotation
+    100%
+        transform: rotate(360deg)

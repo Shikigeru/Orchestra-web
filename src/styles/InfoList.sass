@@ -1,0 +1,46 @@
+.item-container
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-direction: column
+    flex-wrap: wrap
+    h2
+        font-size: 22px
+        font-weight: 500
+        color: #2196f3
+    a
+        text-decoration: none
+        &:focus
+            color: #000
+        &:hover
+            h2
+                color: #0d47a1
+        span
+            text-decoration: none
+            color: #2196f3
+            font-weight: bold
+            text-align: justify
+
+    .item
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        padding: 20px 0px
+        margin-top: -10px
+        img
+            margin-right: 20px
+        span, p
+            font-size: 12px
+        p
+            margin-top: 5px
+            text-align: justify  
+
+@media screen and (max-width: 992px)
+    .item-container
+        .item
+            a, p
+                text-align: left
+@media screen and (max-width: 890px)
+    .item-container
+        h2
+            font-size: 18px

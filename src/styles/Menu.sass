@@ -1,0 +1,87 @@
+nav
+    background: #2196f3
+    margin-top: -5px
+    ul
+        list-style: none
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        transition: all 0.5s
+        max-height: 500px
+        li
+            float: left
+            padding: 20px 0
+            a
+                padding: 20px 40px
+                text-decoration: none
+                color: #fff
+                font-weight: 500 
+                transition: all .3s      
+                &:hover
+                    background: #1976d2
+                &.active
+                    background: #1976d2
+                i
+                    margin-right: 8px
+
+.toggle-menu
+    max-height: 0
+    overflow: hidden
+
+.mob-menu
+    align-items: center
+    cursor: pointer
+    display: none
+    p
+        margin-left: 10px   
+        margin-top: 2px
+        font-weight: bold
+        color: #fff     
+.hamburger-button
+    height: 40px
+    width: 25px
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    .hamburger-line
+        height: 2px
+        width: 100%
+        background: #fff
+        margin-top: 6px
+        box-sizing: border-box
+        &:first-child
+            margin-top: 0
+
+
+@media screen and (min-width: 795px) 
+    .toggle-menu
+        max-height: 500px   
+@media screen and (max-width: 795px)
+    .mob-menu
+        display: flex
+        justify-content: center
+        border-bottom: 1px solid #0d47a1
+    nav
+        margin-top: -5px
+        background: #1976d2
+        ul
+            justify-content: space-between
+            li
+                float: none
+                display: inline
+                text-align: center
+                width: 100%
+                padding: 15px
+                a
+                    box-sizing: border-box
+                    &:hover
+                        background: transparent
+                        text-shadow: 1px 1px 3px #000000
+                    &.active
+                        background: transparent
+                        text-shadow: 1px 1px 3px #000000
+                        
+
+                    
+        
