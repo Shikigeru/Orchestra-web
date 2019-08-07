@@ -11,7 +11,7 @@ const directionDataUS = [
     {
         id: 2,
         post: 'MAIN FIRST SERGEANT OF ORCHESTRA',
-        rank: 'first sergant',
+        rank: 'ensign',
         name: 'Sribniy Andriy Victorovich',
         tel: '+380 063 425 73 27',
         email: '',

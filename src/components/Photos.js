@@ -33,47 +33,11 @@ class Photos extends React.Component {
         if (this.state.docWidth < 776) {
             settings.slidesToShow = 1 
         }
-        const {lang} = this.props;
-        if (lang === 'us') {
-            return (
-                <main>
-                    <TopSlider />
-                    <Menu lang={lang}/>
-                    <div className="main-inner">
-                        <Slider {...settings} className="main-slider">
-                            <div>
-                                <a href='https://photos.app.goo.gl/jBGqw63gtwLwRpzt9'>
-                                    <img src="/images/gallery/image2.jpg" alt="mp" />
-                                </a>
-                            </div>
-                            <div>
-                                <a href='https://photos.app.goo.gl/2ApZyKbe13LMWLdS6'>
-                                    <img src="/images/gallery/image3.jpg" alt="mp" />
-                                </a>
-                            </div>
-                            <div>
-                                <a href='https://photos.app.goo.gl/82C22HfRNyrKLM4o8'>
-                                    <img src="/images/gallery/image1.jpg" alt="mp" />
-                                </a>
-                            </div>
-                        </Slider>
-                        <div className="row">
-                            <div className="col-md-7">
-                                <HistoryBlock lang={lang} />
-                            </div>
-                            <div className="col-md-5">
-                                <RightInfoBlock lang={lang} />
-                            </div>
-                        </div>
-                    </div> 
-                    <Footer />
-                </main>
-            )
-        }
+        const { lang } = this.props;
         return (
             <main>
                 <TopSlider />
-                <Menu />
+                <Menu lang={lang} />
                 <div className="main-inner">
                     <Slider {...settings} className="main-slider">
                         <div>
@@ -94,13 +58,13 @@ class Photos extends React.Component {
                     </Slider>
                     <div className="row">
                         <div className="col-md-7">
-                            <HistoryBlock />
+                            <HistoryBlock lang={lang} />
                         </div>
                         <div className="col-md-5">
-                            <RightInfoBlock />
+                            <RightInfoBlock lang={lang} />
                         </div>
                     </div>
-                </div> 
+                </div>
                 <Footer />
             </main>
         )

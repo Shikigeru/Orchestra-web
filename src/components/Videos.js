@@ -41,17 +41,9 @@ class Videos extends React.Component {
         return (
             <main>
                 <TopSlider />
-                {lang === 'us' ? 
-                    <Menu lang={lang}/>
-                    : 
-                    <Menu />
-                }
+                <Menu lang={lang}/>
                 <div className="main-inner">
-                    {lang === 'us' ? 
-                        <InfoList lang={lang}/>
-                        : 
-                        <InfoList />
-                    }
+                    <InfoList lang={lang}/>
                     <div className="video-block secondary-bg">
                         <h2 className='medium-title'>
                             {lang === 'us' ? 
@@ -88,18 +80,10 @@ class Videos extends React.Component {
     
                     <div className="row">
                         <div className="col-md-7">
-                            {lang === 'us' ?
-                                <HistoryBlock lang={lang} />
-                                :
-                                <HistoryBlock />
-                            }
+                            <HistoryBlock lang={lang} />
                         </div>
                         <div className="col-md-5">
-                            {lang === 'us' ?
-                                <RightInfoBlock lang={lang} />
-                                :
-                                <RightInfoBlock />
-                            }
+                            <RightInfoBlock lang={lang} />
                         </div>
                     </div>
                 </div> 

@@ -17,13 +17,8 @@ class Contacts extends React.Component {
         return(
             <main>
                 <TopSlider />
-                {lang === 'us' ? 
-                    <Menu lang={lang}/>
-                    : 
-                    <Menu />
-                }
+                <Menu lang={lang}/>
                 <div className="main-inner">
-    
                     <div className="contacts">
                         <div className="dsst-logo">
                             <h2 className="medium-title">
@@ -92,18 +87,10 @@ class Contacts extends React.Component {
     
                     <div className="row">
                         <div className="col-md-7"> 
-                            {lang === 'us' ?
-                                <HistoryBlock lang={lang}/>
-                                :
-                                <HistoryBlock />
-                            }
+                            <HistoryBlock lang={lang}/>
                         </div>
                         <div className="col-md-5">
-                            {lang === 'us' ?
-                                <RightInfoBlock lang={lang}/>
-                                :
-                                <RightInfoBlock />
-                            }
+                            <RightInfoBlock lang={lang}/>
                         </div>
                     </div>
                 </div>
