@@ -62,7 +62,36 @@ const videoData = [
     {
         id: 16,
         src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F2048898058753136%2F&show_text=0&width=560'
+    },
+    {
+        id: 17,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F724199914695515%2F&show_text=0&width=560'
+    },
+    {
+        id: 18,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F371159833820454%2F&show_text=0&width=560'
+    },
+    {
+        id: 18,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F2486040501680767%2F&show_text=0&width=560'
+    },
+    {
+        id: 19,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F2279171045729220%2F&show_text=0&width=560'
+    },
+    {
+        id: 20,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F2546954241993074%2F&show_text=0&width=560'
+    },
+    {
+        id: 21,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F2496922223706498%2F&show_text=0&width=560'
+    },
+    {
+        id: 22,
+        src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FChernihivMilitaryOrchestra%2Fvideos%2F3072767826197441%2F&show_text=0&width=560'
     }
 ];
+
 
 export default videoData;
