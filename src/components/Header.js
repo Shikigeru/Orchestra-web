@@ -5,7 +5,7 @@ const Header = (props) => {
     const {lang} = props;
     const contentText = {
         headerText: (lang === 'us' ? 
-                        'MILITARY BAND OF THE 8TH CHERNIHIV TRAINING CENTRE'
+                        'MILITARY BAND OF THE 8TH CHERNIHIV LEARNING CENTRE'
                         :
                         'ВІЙСЬКОВИЙ ОРКЕСТР 8-ГО НАВЧАЛЬНОГО ЧЕРНІГІВСЬКОГО ЦЕНТРУ'
                     ),
