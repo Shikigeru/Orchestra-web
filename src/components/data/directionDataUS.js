@@ -29,7 +29,7 @@ const directionDataUS = [
     {
         id: 3,
         post: 'ARTIST OF HIGHEST CATEGORY',
-        rank: 'senior warrant',
+        rank: 'senior ensign',
         name: 'Chepurny Anatoly Fedorovich',
         tel: '+380 93 278 61 49',
         email: '',
@@ -38,12 +38,31 @@ const directionDataUS = [
     {
         id: 4,
         post: 'ARTIST OF HIGHEST CATEGORY',
-        rank: 'senior warrant',
+        rank: 'senior ensign',
         name: "Ostrouh Vyacheslav Mykolayovych",
         tel: '+380 67 276 15 88',
         email: '',
         picture: '/images/direction/ker5.jpg'
+    },
+    {
+        id: 5,
+        post: 'ARTIST OF HIGHEST CATEGORY',
+        rank: 'senior ensign',
+        name: "Hlopov Gennady Nikolaevich",
+        tel: '+380 93 882 05 01',
+        email: '',
+        picture: '/images/direction/ker7.jpg'
+    },
+    {
+        id: 7,
+        post: 'SQUAD COMMANDER - MUSICIAN',
+        rank: 'junior sergeant',
+        name: "Kosolap Yaroslav Leonidovich",
+        tel: '+380 68 959 04 85',
+        email: '',
+        picture: '/images/direction/ker8.jpg'
     }
+
 ]
 
 export default directionDataUS;

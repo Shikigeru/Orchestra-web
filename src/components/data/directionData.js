@@ -43,6 +43,24 @@ const directionData = [
         tel: '+380 67 276 15 88',
         email: '',
         picture: '/images/direction/ker5.jpg'
+    },
+    {
+        id: 6,
+        post: 'АРТИСТ ВИЩОЇ КАТЕГОРІЇ',
+        rank: 'старший прапорщик',
+        name: "Хлопов Геннадій Миколайович",
+        tel: '+380 93 882 05 01',
+        email: '',
+        picture: '/images/direction/ker7.jpg'
+    },
+    {
+        id: 7,
+        post: 'КОМАНДИР ВІДДІЛЕННЯ - МУЗИКАНТ',
+        rank: 'молодший сержант',
+        name: "Косолап Ярослав Леонідович",
+        tel: '+380 68 959 04 85',
+        email: '',
+        picture: '/images/direction/ker8.jpg'
     }
 ]; 
 
