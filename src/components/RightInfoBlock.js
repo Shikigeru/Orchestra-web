@@ -9,7 +9,7 @@ const RightInfoBlock = (props) => {
         maintText: (lang === 'us' ? 
                         'February 23, 24, 2019 the orchestra of the 8th Chernihiv Training Center of the State Special Service of the Ministry of Defense of Ukraine participated in the 99th international festival "Carnaband\'s Show 2019" in the city of Chalon-sur-Seine, Republic of France.'
                         :
-                        '23, 24 лютого 2019 року оркестр 8-го Чернігівського навчального центру державної спеціальної служби Міністерства оборони України приймав участь в 99 міжнародному фестивалі «Carnaband\’s Show 2019» в місті Шалон Сюр-Сон республіки Франція.'    
+                        '23, 24 лютого 2019 року оркестр 8-го Чернігівського навчального центру державної спеціальної служби Міністерства оборони України приймав участь в 99 міжнародному фестивалі «Carnaband’s Show 2019» в місті Шалон Сюр-Сон республіки Франція.'    
                     ),
         buttonText: lang === 'us' ? 'READ MORE' : 'Детальніше'
     }

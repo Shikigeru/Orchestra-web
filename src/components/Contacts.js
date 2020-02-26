@@ -66,8 +66,12 @@ class Contacts extends React.Component {
                                         {contentText.socialMedia}
                                     </h2>
                                     <div className="social-media-info">
-                                        <a href="https://www.facebook.com/ChernihivMilitaryOrchestra" className="facebook-social"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ" className="youtube-social"><i className="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                        <a href="https://www.facebook.com/ChernihivMilitaryOrchestra" className="facebook-social">
+                                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ" className="youtube-social">
+                                            <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
