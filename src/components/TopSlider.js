@@ -31,7 +31,7 @@ class TopSlider extends React.Component {
             <div className="top-slider">
                 <div className={screenWidth <= 925 ? 'lira hidden' : 'lira'}>
                     <img src="/images/lira/1.png" alt="1" />
-                    <img src="/images/lira/2.gif" alt="2" />
+                    <img src="/images/lira/lira.png" alt="2"/>
                     <img src="/images/lira/3.png" alt="3" />
                 </div>
                 <Slider {...settings}>

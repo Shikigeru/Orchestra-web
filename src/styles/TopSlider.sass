@@ -13,7 +13,18 @@
             animation: rotation 30s linear infinite
         &:nth-child(2)
             position: absolute
+            animation: lira-rotation 3s linear infinite            
 
 @keyframes rotation
     100%
         transform: rotate(360deg)
+
+@keyframes lira-rotation
+    0%
+        transform: rotateY(0deg)
+    10%
+        transform: rotateY(0deg)
+    40%
+        transform: rotateY(180deg)
+    60%
+        transform: rotateY(180deg)
