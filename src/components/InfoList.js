@@ -10,8 +10,9 @@ class InfoList extends React.Component {
         return (
             <div className="info-list">
                 <div className="row">
-                    <div className="col-md-4 .col-sm-12 item-container">
-                        <NavLink to='/compositions'>
+                    <div className="col-md-4 col-sm-12 item-container">
+                        {/* <NavLink to='/compositions'> */}
+                        <NavLink to='/'>
                             <h2>
                                 {lang === 'us' ? 'Repertoire of orchestra' : 'Репертуар оркестру'}
                             </h2>
@@ -36,7 +37,7 @@ class InfoList extends React.Component {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="col-md-4 .col-sm-12 item-container">
+                    <div className="col-md-4 col-sm-12 item-container">
                         <NavLink to='/blog'>
                             <h2>
                                 {lang === 'us' ? 'News' : 'Новини'}
@@ -62,7 +63,7 @@ class InfoList extends React.Component {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="col-md-4 .col-sm-12 item-container">
+                    <div className="col-md-4 col-sm-12 item-container">
                         <NavLink to="/contacts">
                             <h2>
                                 {lang === 'us' ? 'Questions?' : 'Запитання?'}

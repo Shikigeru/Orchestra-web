@@ -13,6 +13,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
+        document.title = 'Блог';        
         fetch('http://orkestrdsst.ho.ua/wordpress-adm/wp-json/wp/v2/posts')
         .then((response) => response.json())
         .then((postData) => {
@@ -21,7 +22,6 @@ class Blog extends React.Component {
                 isLoaded: true
             })
         })
-        
     }
 
 

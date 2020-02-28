@@ -32,9 +32,16 @@ class BlogInner extends React.Component {
             }
         })
     }
+
+    formatDate = function(postDate) {
+        const year = postDate.slice(0,4);
+        const month = postDate.slice(5,7);
+        const day = postDate.slice(8, 10);
+        return `${year}.${month}.${day}`;
+    }
+
     render() {
         const {post, isLoaded, imgUrl} = this.state;
-
         return (
             <main>
                 <TopSlider />
@@ -43,6 +50,7 @@ class BlogInner extends React.Component {
                     <div className="secondary-bg blog-inner">
                         {isLoaded ? 
                             <div>
+                                <p className="blog-inner-date">Дата публікації: {this.formatDate(post.date)}</p>
                                 <h1 className="medium-title">{post.title.rendered}</h1>
                                 <div className="image">
                                     {imgUrl ? <img src={imgUrl} alt={post.title.rendered} /> : ''}
@@ -53,7 +61,7 @@ class BlogInner extends React.Component {
                                 </div>
                             </div>
                             :
-                            <h1>Loading...</h1>
+                            <div className="loader"></div>
                         }
                     </div>
                 </div>
