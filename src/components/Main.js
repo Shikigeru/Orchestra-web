@@ -11,7 +11,7 @@ import Footer from './Footer';
 
 class Main extends React.Component {
     componentDidMount() {
-        document.title = 'Оркестр ДССТ - Головна'
+        document.title = 'Оркестр ДССТ'
     }
     render() {
         const {lang} = this.props;
