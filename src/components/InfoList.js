@@ -10,22 +10,24 @@ class InfoList extends React.Component {
         return (
             <div className="info-list">
                 <div className="row">
-                    <div className="col-md-4 col-sm-12 item-container">
+                    <div className="col-md-4 card-container">
                         {/* <NavLink to='/compositions'> */}
-                        <NavLink to='/'>
+                        <NavLink to='/' className="info-card">
                             <h2>
-                                {lang === 'us' ? 'Repertoire of orchestra' : 'Репертуар оркестру'}
+                                {lang === 'us' ? 'Repertoire' : 'Репертуар'}
                             </h2>
                             <div className="item">
-                                <img src="/images/info-list/img1-sax.png" alt="sax" />
+                                <div className="img-container">
+                                    <img src="/images/info-list/repertoire.png" alt="sax" />
+                                </div>
                                 <div className="item-text">
-                                    <span>
+                                    <h6>
                                         {lang === 'us' ? 
                                             'List of songs and musical works performed by orchestra' 
                                             : 
                                             'Список композицій та музикальних творів які виконує оркестр'
                                         }
-                                    </span>
+                                    </h6>
                                     <p>
                                         {lang === 'us' ?
                                             'From classic to contemporary'
@@ -37,21 +39,23 @@ class InfoList extends React.Component {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="col-md-4 col-sm-12 item-container">
-                        <NavLink to='/blog'>
+                    <div className="col-md-4 card-container">
+                        <NavLink to='/blog' className="info-card">
                             <h2>
                                 {lang === 'us' ? 'News' : 'Новини'}
                             </h2>
                             <div className="item">
-                                <img src="/images/info-list/img2.png" alt="clock" />
+                                <div className="img-container">
+                                    <img src="/images/info-list/news.png" alt="clock" />
+                                </div>
                                 <div className="item-text">
-                                    <span>
+                                    <h6>
                                         {lang === 'us' ? 
                                             'What Chernihiv live orchestra SSTS' 
                                             : 
                                             'Чим живе Чернігівський оркестр ДССТ'
                                         }
-                                    </span>
+                                    </h6>
                                     <p>
                                         {lang === 'us' ? 
                                             'Things to travel, enchanting tour and more' 
@@ -63,21 +67,23 @@ class InfoList extends React.Component {
                             </div>
                         </NavLink>
                     </div>
-                    <div className="col-md-4 col-sm-12 item-container">
-                        <NavLink to="/contacts">
+                    <div className="col-md-4 card-container">
+                        <NavLink to="/contacts" className="info-card">
                             <h2>
                                 {lang === 'us' ? 'Questions?' : 'Запитання?'}
                             </h2>
                             <div className="item">
-                                <img src="/images/info-list/img3.png" alt="ask" />
+                                <div className="img-container">
+                                    <img src="/images/info-list/question.png" alt="ask" />
+                                </div>
                                 <div className="item-text">
-                                    <span>
+                                    <h6>
                                         {lang === 'us' ? 
                                             'If you do not find the information contact us' 
                                             : 
                                             'Якщо ви не знайшли потрібну Вам інформацію звертайтесь до нас'
                                         }
-                                    </span>
+                                    </h6>
                                     <p>e-mail: orkestr_dsst@i.ua</p>
                                 </div>
                             </div>
