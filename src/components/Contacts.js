@@ -46,31 +46,43 @@ class Contacts extends React.Component {
                             </h2>
                             <div className="row">
                                 <div className="col-md-8 cont-col">
-                                    <p>
-                                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <div className="contacts-info-item">
+                                        <div className="icon-holder">
+                                            <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </div>
                                         {contentText.postCode}
-                                    </p>
-                                    <p>
-                                        <i className="fa fa-map-marker" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="contacts-info-item">
+                                        <div className="icon-holder">
+                                            <i className="fa fa-map-marker" aria-hidden="true"></i>
+                                        </div>
                                         {contentText.address}
-                                    </p>
-                                    <p>
-                                        <i className="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="contacts-info-item">
+                                        <div className="icon-holder">
+                                            <i className="fa fa-phone" aria-hidden="true"></i>
+                                        </div>
                                         {contentText.phone}
-                                    </p>
-                                    <p>
-                                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div className="contacts-info-item">
+                                        <div className="icon-holder">
+                                            <i className="fa fa-envelope" aria-hidden="true"></i>
+                                        </div>
                                         {contentText.email}
-                                    </p>
+                                    </div>
                                     <h2 className="medium-title">
                                         {contentText.socialMedia}
                                     </h2>
                                     <div className="social-media-info">
                                         <a href="https://www.facebook.com/ChernihivMilitaryOrchestra" className="facebook-social">
-                                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                                            <div className="icon-holder">
+                                                <i className="fa fa-facebook" aria-hidden="true"></i>
+                                            </div>
                                         </a>
                                         <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ" className="youtube-social">
-                                            <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                                            <div className="icon-holder">
+                                                <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>

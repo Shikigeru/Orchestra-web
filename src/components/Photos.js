@@ -6,6 +6,7 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 import TopSlider from './TopSlider';
 import Menu from './Menu';
+import InfoList from './InfoList';
 import HistoryBlock from './HistoryBlock';
 import RightInfoBlock from './RightInfoBlock';
 import Footer from './Footer';
@@ -39,6 +40,7 @@ class Photos extends React.Component {
                 <TopSlider />
                 <Menu lang={lang} />
                 <div className="main-inner">
+                    <InfoList lang={lang} />
                     <Slider {...settings} className="main-slider">
                         <div>
                             <a href='https://photos.app.goo.gl/jBGqw63gtwLwRpzt9'>
