@@ -48,7 +48,7 @@ class Photos extends React.Component {
                             </a>
                         </div>
                         <div>
-                            <a href='https://photos.app.goo.gl/2ApZyKbe13LMWLdS6'>
+                            <a href='https://photos.app.goo.gl/bNsuDjpNA5DmdjAu5'>
                                 <img src="/images/gallery/image3.jpg" alt="mp" />
                             </a>
                         </div>
