@@ -24,7 +24,7 @@ class Contacts extends React.Component {
                         'Адреса: Україна, місто Чернігів, вулиця Івана Мазепи 18'
                     ),
             phone: (lang === 'us' ? 'Phone: ' : 'Телефон: ') + '+38 (0462) 67-70-22',
-            email: 'Email: orkestr_dsst@i.ua',
+            email: 'orkestr_dsst@i.ua',
             socialMedia: lang === 'us' ? 'Follow us on social media' : 'Ми у соцмережах',
             coords: lang === 'us' ? 'Coordinates:' : 'Наші координати:'
         }
@@ -68,7 +68,10 @@ class Contacts extends React.Component {
                                         <div className="icon-holder">
                                             <i className="fa fa-envelope" aria-hidden="true"></i>
                                         </div>
-                                        {contentText.email}
+                                        Email:
+                                        <a href="mailto:orkestr_dsst@i.ua">
+                                            &nbsp;{contentText.email}
+                                        </a>
                                     </div>
                                     <h2 className="medium-title">
                                         {contentText.socialMedia}
