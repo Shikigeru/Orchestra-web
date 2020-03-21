@@ -25,7 +25,7 @@ const HistoryBlock = (props) => {
     }
     return (
         <div className="history-block">
-            <h2 className="medium-title">{contentText.titleText}</h2>
+            <h2 className="medium-title">{contentText.titleText.toUpperCase()}</h2>
             {contentText.mainText}
         </div>
     )

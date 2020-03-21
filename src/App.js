@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 import './styles/App.sass';
 import Header from './components/Header';
 import Main from './components/Main';
-import Photos from './components/Photos';
-import Videos from './components/Videos';
 
-import AboutUS from './components/AboutUS';
-import Contacts from './components/Contacts';
-import Compositions from './components/Compositions';
-import Blog from './components/Blog';
-import BlogInner from './components/BlogInner';
-// import ScrollToTop from './components/ScrollToTop';
+// React lazy loading components
+const Photos = React.lazy(() => import('./components/Photos')); 
+const Videos = React.lazy(() => import('./components/Videos'));
+const AboutUS = React.lazy(() => import('./components/AboutUS'));
+const Contacts = React.lazy(() => import('./components/Contacts'));
+const Compositions = React.lazy(() => import('./components/Compositions'));
+const Blog = React.lazy(() => import('./components/Blog'));
+const BlogInner = React.lazy(() => import('./components/BlogInner'))
 
 
 class App extends Component {
@@ -37,7 +37,7 @@ class App extends Component {
           </div>
           <Header lang={lang} />
           <Router>
-            {/* <ScrollToTop> */}
+            <Suspense fallback={<div className="loader"></div>}>
               <Route path="/" component={() => <Main lang={lang} />} exact />
               <Route path="/photos" component={() => <Photos lang={lang}/>} exact />
               <Route path="/compositions" component={() => <Compositions lang={lang}/>} />
@@ -46,7 +46,7 @@ class App extends Component {
               <Route path="/contacts" component={() => <Contacts lang={lang}/>} />
               <Route path="/blog" component={() => <Blog lang={lang}/>} exact />
               <Route path="/blog/:id" component={BlogInner} />
-            {/* </ScrollToTop> */}
+            </Suspense>
           </Router>
         </div>
       </div>
