@@ -5,23 +5,23 @@ const Header = (props) => {
     const {lang} = props;
     const contentText = {
         headerText: (lang === 'us' ? 
-                        'MILITARY BAND OF THE 8TH CHERNIHIV LEARNING CENTRE'
+                        'military band of the 8th chernihiv learning center'
                         :
-                        'ВІЙСЬКОВИЙ ОРКЕСТР 8-ГО НАВЧАЛЬНОГО ЧЕРНІГІВСЬКОГО ЦЕНТРУ'
+                        'військовий оркестр 8-го навчального чернігівського центру'
                     ),
         subheadText: (lang === 'us' ?
-                        'HEAD ORCHESTRA - CONDUCTOR COLONEL NIKOLAY SMAL'
+                        'head orchestra - conductor colonel nikolay smal'
                         :
-                        'НАЧАЛЬНИК ОРКЕСТРУ - ВІЙСЬКОВИЙ ДИРИГЕНТ ПОЛКОВНИК МИКОЛА СМАЛЬ'
+                        'начальник оркестру - військовий диригент полковник микола смаль'
                      )
     }
     return (
         <header>
             <h1 className="logo-text">
-                {contentText.headerText}
+                {contentText.headerText.toUpperCase()}
             </h1>
             <h3 className="logo-subtext">
-                {contentText.subheadText}
+                {contentText.subheadText.toUpperCase()}
             </h3>
         </header>
     )
