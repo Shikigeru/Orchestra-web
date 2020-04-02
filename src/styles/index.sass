@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic')
+@import '../../node_modules/reset-css/reset'
 
-* 
-  margin: 0
-  padding: 0
-  font-family: 'Roboto', sans-serif
 html, body
   height: 100%
+  font-family: 'Roboto', sans-serif
 
 .app
   width: 100%
@@ -30,3 +28,119 @@ html, body
   font-weight: bold
   &:hover
     background: #35a0b3
+    
+.top-slider
+    img
+        width: 100%
+
+.medium-title 
+    font-size: 22px
+    font-weight: 500
+    color: #2196f3
+
+.main-link
+    text-decoration: none
+    color: #2196f3
+    font-weight: bold
+    &:hover
+        color: #0d47a1
+
+.secondary-bg
+    background: #e3f2fd
+    border-radius: 5px
+    padding: 20px
+
+.prim-btn
+    background: #2196f3
+    color: #fff
+    padding: 10px 15px
+    border: none
+    font-size: 16px
+    border-radius: 5px
+    font-weight: bold
+    text-decoration: none
+    transition: all 0.2s
+    outline: none
+    &:hover
+        background: #1976d2
+    i
+        margin-right: 5px
+        margin-top: 1px
+
+.center
+    text-align: center
+.hidden 
+    display: none
+
+.lang
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    cursor: pointer
+    transtion: all 1s
+    -webkit-tap-highlight-color: transparent
+    img
+        width: 30px
+        height: 30px
+        margin-right: 10px
+        border-radius: 50%
+        &:hover
+            transform: rotate(360deg)
+            transition: all 1s
+        &:last-child
+            margin-right: 0
+
+.news
+    .medium-title
+        text-align: center
+        margin-bottom: 20px
+    img
+        width: 100%
+    p
+        text-align: justify
+        text-indent: 20px
+        font-size: 16px
+        margin-bottom: 10px
+        margin-top: 10px
+    a
+        font-weight: bold
+        text-decoration: none
+        color: #00D8FF
+        font-size: 18px
+    iframe
+        text-align: center
+    ul
+        margin-bottom: 20px
+        margin-left: 20px
+
+.loader, .loader:after
+    border-radius: 50%
+    width: 80px
+    height: 80px
+
+.loader
+    margin: 30px auto
+    font-size: 10px
+    position: relative
+    text-indent: -9999em
+    border-top: 1.1em solid rgba(33, 150, 243, .2)
+    border-right: 1.1em solid rgba(33, 150, 243, .2)
+    border-bottom: 1.1em solid rgba(33, 150, 243, .2)
+    border-left: 1.1em solid #2196f3
+    transform: translateZ(0)
+    animation: loading 1.1s infinite
+
+@keyframes loading
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@media screen and (max-width: 992px)
+    .secondary-bg
+        border-radius: 0px
+    .container
+        max-width: 100% !important
+        padding-left: 0 !important
+        padding-right: 0 !important

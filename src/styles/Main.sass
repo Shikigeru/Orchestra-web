@@ -1,20 +1,35 @@
-.btn 
-    background: #00D8FF
-    color: #fff
-    border: none
-    padding: 10px 25px
-    border-radius: 5px
-    font-size: 15px
-    font-weight: bold
-    cursor: pointer
-    transition: all .3s
-    outline: none
-    &:hover
-        background: #00a2bf
-    &:disabled
-        background: #b2f0fb
-        cursor: not-allowed
+main 
+    margin-top: 30px
+    margin-bottom: 30px
+    background: #EBEBEB
+    padding: 15px
+    .main-inner
+        background-color: #fff
+        padding: 20px
+        .main-text
+            text-indent: 30px
+            font-weight: 500
+            font-size: 18px
+            text-align: justify
+            color: #383838
 
+.main-slider
+    margin-bottom: 20px
+    img
+        width: 100%
+        
 @media screen and (max-width: 992px)
-    .main-page
-        // padding: 10px
+    main
+        padding: 0px
+        margin-bottom: 0
+        .main-inner
+            padding: 0px
+            padding-top: 10px
+            .main-text
+                font-size: 14px
+                padding-left: 15px 
+                padding-right: 15px
+            .right-info
+                margin-bottom: 20px
+            .row
+                margin: 0

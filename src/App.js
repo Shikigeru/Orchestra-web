@@ -2,7 +2,7 @@ import React, { Component, Suspense } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
-import './styles/App.sass';
+import './styles/index.sass';
 import Header from './components/Header';
 import Main from './components/Main';
 
