@@ -24,9 +24,39 @@ nav
                 i
                     margin-right: 8px
 
-.toggle-menu
-    max-height: 0
-    overflow: hidden
+.mobile-menu
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    min-height: 100vh
+    background-color: #2196f3
+    z-index: 9999
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    transform: scale(0)
+    transition: all .3s
+    ul
+        width: 100%
+        li 
+            width: 100%
+            text-align: center
+            padding: 0
+            a
+                width: 100%
+                display: inline-block
+    .close
+        position: absolute
+        right: 20px
+        top: 20px
+        cursor: pointer
+        overflow: hidden
+        color: #fff
+        font-size: 25px   
+.opened
+    transform: scale(1)     
 
 .mob-menu
     align-items: center
@@ -38,49 +68,24 @@ nav
         font-weight: bold
         color: #fff     
 .hamburger-button
-    height: 40px
+    height: 60px
     width: 25px
     background-color: transparent
+    color: #fff
     border: none
     outline: none
     cursor: pointer
-    .hamburger-line
-        height: 2px
-        width: 100%
-        background: #fff
-        margin-top: 6px
-        box-sizing: border-box
-        &:first-child
-            margin-top: 0
-
+    font-size: 25px
 
 @media screen and (min-width: 795px) 
-    .toggle-menu
-        max-height: 500px   
+    .mobile-menu
+        display: none   
 @media screen and (max-width: 795px)
     .mob-menu
         display: flex
         justify-content: center
-        border-bottom: 1px solid #0d47a1
-    nav
-        margin-top: -5px
-        background: #1976d2
-        ul
-            justify-content: space-between
-            li
-                float: none
-                display: inline
-                text-align: center
-                width: 100%
-                padding: 15px
-                a
-                    box-sizing: border-box
-                    &:hover
-                        background: transparent
-                        text-shadow: 1px 1px 3px #000000
-                    &.active
-                        background: transparent
-                        text-shadow: 1px 1px 3px #000000
+    .desktop-menu
+        display: none
                         
 
                     
