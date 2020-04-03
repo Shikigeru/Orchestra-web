@@ -26,7 +26,7 @@ class Main extends React.Component {
                             <div className="main-text">
                                 <p>
                                     Without exaggeration, it is safe to call our military orchestra 
-                                    of the 8th Chernihiv Training Center a calling 
+                                    of the 8th Chernihiv Learning Center a calling 
                                     card of the State Special Transport Service.
                                 </p>
                                 <p>
@@ -52,7 +52,7 @@ class Main extends React.Component {
                             <div className="main-text">
                                 <p>
                                     Без перебільшення можна сміливо назвати наш військовий оркестр 
-                                    8-го Чернігівського навчального центру візитною карткою 
+                                    8-го навчального Чернігівського центру візитною карткою 
                                     Державної спеціальної служби транспорту.
                                 </p>
                                 <p>
