@@ -23,10 +23,10 @@ class AboutUS extends React.Component {
     render() {
         const { lang } = this.props;
         return (
-            <main>
+            <main className="main">
                 <TopSlider />
                 <Menu lang={lang} />
-                <div className="main-inner about">
+                <div className="main__inner about">
                     <div className="book">
                         <h2 className="medium-title">
                             {lang === 'us' ? 

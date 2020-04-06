@@ -29,10 +29,10 @@ class Contacts extends React.Component {
             coords: lang === 'us' ? 'Coordinates:' : 'Наші координати:'
         }
         return(
-            <main>
+            <main className="main">
                 <TopSlider />
                 <Menu lang={lang}/>
-                <div className="main-inner">
+                <div className="main__inner">
                     <div className="contacts">
                         <div className="dsst-logo">
                             <h2 className="medium-title">

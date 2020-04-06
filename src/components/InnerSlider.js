@@ -14,7 +14,7 @@ const InnerSlider = () => {
         slidesToScroll: 1
     };
     return (
-            <Slider {...settings} className="main-slider">
+            <Slider {...settings} className="main__slider">
                 <div>
                     <img src="/images/main-slider/02.jpg" alt=""/>
                 </div>

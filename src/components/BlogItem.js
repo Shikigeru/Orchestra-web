@@ -32,15 +32,15 @@ class BlogItem extends React.Component {
         const {title, content, id, date} = this.props.post;
         const {imgUrl} = this.state;
         return (
-            <div className="blog-item secondary-bg">
+            <div className="blog__item secondary-bg">
                 <NavLink to={`/blog/${id}`} className="thumb-img">
-                    <div className="blog-item-image">
+                    <div className="blog__item__image">
                         {imgUrl ? <img src={imgUrl} alt={title.rendered}/> : ''}
                     </div>
                 </NavLink>
-                <div className="blog-preview-text">
-                    <NavLink className='blog-item-tile' to={`/blog/${id}`}><h2>{title.rendered}</h2></NavLink>
-                    <p className="blog-item-date">Дата публікації: {this.formatDate(date)}</p>
+                <div className="blog__item__preview-text">
+                    <NavLink className='blog__item__title' to={`/blog/${id}`}><h2>{title.rendered}</h2></NavLink>
+                    <p className="blog__item__date">Дата публікації: {this.formatDate(date)}</p>
                     <p dangerouslySetInnerHTML={{ __html: content.rendered.length > 200 ? content.rendered.slice(0, 200) + '...' : content.rendered }}></p>
                     <div className="center">
                         <NavLink className='prim-btn' to={`/blog/${id}`}>

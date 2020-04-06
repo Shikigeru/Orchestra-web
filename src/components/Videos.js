@@ -39,10 +39,10 @@ class Videos extends React.Component {
         const {lang} = this.props;
 
         return (
-            <main>
+            <main className="main">
                 <TopSlider />
                 <Menu lang={lang}/>
-                <div className="main-inner">
+                <div className="main__inner">
                     <InfoList lang={lang}/>
                     <div className="video-block secondary-bg">
                         <h2 className='medium-title'>
@@ -55,7 +55,7 @@ class Videos extends React.Component {
                         <div className="row">
                             {items.map((video) => (
                                 <div className="col-md-6" key={video.id}>
-                                    <div className="facebook-responsive">
+                                    <div className="responsive-iframe">
                                         <iframe
                                             src={video.src}
                                             width="100%"

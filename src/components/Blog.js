@@ -28,10 +28,10 @@ class Blog extends React.Component {
     render() {
         const {posts, isLoaded} = this.state;
         return (
-            <main className="blog">
+            <main className="blog main">
                 <TopSlider />
                 <Menu />
-                <div className="main-inner">
+                <div className="main__inner">
                     {isLoaded ?
                         posts.map((post) => (
                             <BlogItem 

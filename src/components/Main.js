@@ -16,14 +16,14 @@ class Main extends React.Component {
     render() {
         const {lang} = this.props;
         return (
-                <main>
+                <main className="main">
                     <TopSlider />
                     <Menu lang={lang} />
-                    <div className="main-inner">
+                    <div className="main__inner">
                         <InfoList lang={lang} />
                         <InnerSlider />
                         {lang === 'us' ?
-                            <div className="main-text">
+                            <div className="main__text">
                                 <p>
                                     Without exaggeration, it is safe to call our military orchestra 
                                     of the 8th Chernihiv Learning Center a calling 
@@ -49,7 +49,7 @@ class Main extends React.Component {
                                 </p>
                             </div>
                             :
-                            <div className="main-text">
+                            <div className="main__text">
                                 <p>
                                     Без перебільшення можна сміливо назвати наш військовий оркестр 
                                     8-го навчального Чернігівського центру візитною карткою 

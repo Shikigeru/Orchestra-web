@@ -1,19 +1,17 @@
 .blog
-    .blog-item
+    &__item
         padding: 30px
         margin-bottom: 20px
         display: flex
         flex-wrap: wrap
         flex-direction: row
-        .thumb-img
-            width: 30%
-        .blog-preview-text
+        &__preview-text
             width: 67%
             margin-left: 20px
-        .blog-item-date
+        &__date
             font-size: 12px
             color: #666
-        .blog-item-tile
+        .blog__item__title
             display: flex
             justify-content: flex-start
             width: 100%
@@ -22,7 +20,10 @@
             font-size: 24px
             &:hover
                 color: #1976d2
-        .blog-item-image
+        .thumb-img
+            width: 30%
+        
+        &__image
             display: flex
             align-items: center
             justify-content: center
@@ -35,7 +36,6 @@
             height: auto
         p
             margin-bottom: 10px
-            &:last-child
         a
             display: flex
             width: 150px
@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 810px)
     .blog
-        .blog-item
+        &__item
             align-items: center
             justify-content: center
             align-items: center
@@ -53,7 +53,7 @@
                 min-width: 100%
                 text-align: center
                 margin-bottom: 20px
-            .blog-preview-text
+            &__preview-text
                 min-width: 100%
                 text-align: justify
                 margin-left: 0

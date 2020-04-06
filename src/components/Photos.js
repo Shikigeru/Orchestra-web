@@ -36,12 +36,12 @@ class Photos extends React.Component {
         }
         const { lang } = this.props;
         return (
-            <main>
+            <main className="main">
                 <TopSlider />
                 <Menu lang={lang} />
-                <div className="main-inner">
+                <div className="main__inner">
                     <InfoList lang={lang} />
-                    <Slider {...settings} className="main-slider">
+                    <Slider {...settings} className="main__slider">
                         <div>
                             <a href='https://photos.app.goo.gl/jBGqw63gtwLwRpzt9'>
                                 <img src="/images/gallery/image2.jpg" alt="mp" />
