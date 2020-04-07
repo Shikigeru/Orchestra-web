@@ -33,6 +33,12 @@ class Videos extends React.Component {
             })
         }
     }
+    showLess() {
+        this.setState({
+            more: 4,
+            isEnabled: true
+        })
+    }
 
     render() {
         const {items, more, isEnabled} = this.state;
@@ -58,9 +64,6 @@ class Videos extends React.Component {
                                     <div className="responsive-iframe">
                                         <iframe
                                             src={video.src}
-                                            width="100%"
-                                            height="300px"
-                                            style={{ 'border': 'none', 'overflow': 'hidden' }}
                                             title={video.id}
                                             allowFullScreen
                                         >
@@ -74,6 +77,13 @@ class Videos extends React.Component {
                             >
                                 <i className="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
                                 {lang === 'us' ? 'Load More' : 'Завантажити ще'}
+                            </button>
+                            <button
+                                onClick={this.showLess.bind(this)}
+                                className={isEnabled ? 'prim-btn load-more hidden' : 'prim-btn load-more'}
+                            >
+                                <i className="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+                                {lang === 'us' ? 'Hide' : 'Згорнути'}
                             </button>
                         </div>
                     </div>
