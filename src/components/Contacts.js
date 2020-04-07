@@ -40,49 +40,49 @@ class Contacts extends React.Component {
                             </h2>
                             <img src="/images/DSST.png" alt="dsst" />
                         </div>
-                        <div className="contacts-info secondary-bg">
+                        <div className="contacts__info secondary-bg">
                             <h2 className="medium-title">
                                 {contentText.contacts}
                             </h2>
                             <div className="row">
                                 <div className="col-md-8 cont-col">
-                                    <div className="contacts-info-item">
+                                    <div className="contacts__info__item">
                                         <div className="icon-holder">
                                             <i className="fa fa-envelope-o" aria-hidden="true"></i>
                                         </div>
                                         {contentText.postCode}
                                     </div>
-                                    <div className="contacts-info-item">
+                                    <div className="contacts__info__item">
                                         <div className="icon-holder">
                                             <i className="fa fa-map-marker" aria-hidden="true"></i>
                                         </div>
                                         {contentText.address}
                                     </div>
-                                    <div className="contacts-info-item">
+                                    <div className="contacts__info__item">
                                         <div className="icon-holder">
                                             <i className="fa fa-phone" aria-hidden="true"></i>
                                         </div>
                                         {contentText.phone}
                                     </div>
-                                    <div className="contacts-info-item">
+                                    <div className="contacts__info__item">
                                         <div className="icon-holder">
                                             <i className="fa fa-envelope" aria-hidden="true"></i>
                                         </div>
                                         Email:
-                                        <a href="mailto:orkestr_dsst@i.ua">
+                                        <a href="mailto:orkestr_dsst@i.ua" className="main-link">
                                             &nbsp;{contentText.email}
                                         </a>
                                     </div>
                                     <h2 className="medium-title">
                                         {contentText.socialMedia}
                                     </h2>
-                                    <div className="social-media-info">
-                                        <a href="https://www.facebook.com/ChernihivMilitaryOrchestra" className="facebook-social">
+                                    <div className="social__media">
+                                        <a href="https://www.facebook.com/ChernihivMilitaryOrchestra">
                                             <div className="icon-holder">
                                                 <i className="fa fa-facebook" aria-hidden="true"></i>
                                             </div>
                                         </a>
-                                        <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ" className="youtube-social">
+                                        <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ">
                                             <div className="icon-holder">
                                                 <i className="fa fa-youtube-play" aria-hidden="true"></i>
                                             </div>

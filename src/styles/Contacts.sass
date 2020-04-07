@@ -14,8 +14,8 @@
         align-items: center
         border-radius: 50%
         margin-right: 10px
-    .contacts-info
-        &-item
+    &__info
+        &__item
             display: flex
             align-items: center
             margin-bottom: 10px
@@ -23,23 +23,14 @@
         h2 
             text-align: center
             margin-bottom: 20px
-        a
-            text-decoration: none
-            color: #1f879a
-            &:hover
-                color: #1d3033
-        &-item
-            display: flex
-            align-items: center
-            margin-bottom: 10px
         i
             font-size: 25px
-        .social-media-info
+        .social__media
             display: flex
             justify-content: center
-            .facebook-social i
+            a:nth-child(1) i
                 color: #3578E5
-            .youtube-social i
+            a:nth-child(2) i
                 color: #FF0000
         .orch-logo
             img
@@ -53,7 +44,7 @@
 
 @media screen and (max-width:770px)     
 .contacts
-    .contacts-info
+    &__info
         .orch-logo
             text-align: center
             img
@@ -62,6 +53,5 @@
         margin-bottom: 20px
                 
 @media screen and (max-width: 992px)
-    .contacts
-        .contacts-info
-            padding: 10px
+    .contacts__info
+        padding: 10px

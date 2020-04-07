@@ -43,7 +43,7 @@ class BlogInner extends React.Component {
     render() {
         const {post, isLoaded, imgUrl} = this.state;
         return (
-            <main>
+            <main className="main">
                 <TopSlider />
                 <Menu />
                 <div className="main__inner">
