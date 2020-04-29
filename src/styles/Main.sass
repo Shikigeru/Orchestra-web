@@ -6,6 +6,25 @@
     &__inner
         background-color: #fff
         padding: 20px
+        //slick-slider styles
+        div.slick-slider.main__slider.slick-initialized 
+            ul
+                bottom: 20px
+                li > button::before
+                    color: #fff
+                    font-size: 13px
+            button.slick-arrow.slick-next,
+            button.slick-arrow.slick-prev
+                z-index: 1
+                width: 40px
+                height: 40px
+                &::before
+                    font-size: 35px
+            button.slick-arrow.slick-prev
+                left: 0
+            button.slick-arrow.slick-next
+                right: 0
+
     &__text
         text-indent: 30px
         font-weight: 500
