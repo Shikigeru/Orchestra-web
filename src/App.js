@@ -3,7 +3,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 
 import './styles/index.sass';
 import Header from './components/Header';
-import AppNavigator from './navigation/AppNavigator';
+import AppRouter from './navigation/AppRouter';
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class App extends Component {
             />
           </div>
           <Header lang={lang} />
-          <AppNavigator lang={lang} />
+          <AppRouter lang={lang} />
         </div>
       </div>
     );

@@ -12,7 +12,7 @@ const Compositions = React.lazy(() => import('../components/Compositions'));
 const Blog = React.lazy(() => import('../components/Blog'));
 const BlogInner = React.lazy(() => import('../components/BlogInner'));
 
-const AppNavigator = ({ lang }) => {
+const AppRouter = ({ lang }) => {
   return (
     <Router>
       <Suspense fallback={<div className="loader" />}>
@@ -32,8 +32,8 @@ const AppNavigator = ({ lang }) => {
   );
 };
 
-AppNavigator.propTypes = {
+AppRouter.propTypes = {
   lang: PropTypes.string.isRequired,
 };
 
-export default AppNavigator;
+export default AppRouter;
