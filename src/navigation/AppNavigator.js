@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Main from '../pages/Main/Main';
 // React lazy loading components
-const Photos = React.lazy(() => import('../components/Photos'));
+const Photos = React.lazy(() => import('../pages/Photos/Photos'));
 const Videos = React.lazy(() => import('../components/Videos'));
 const AboutUS = React.lazy(() => import('../components/AboutUS'));
 const Contacts = React.lazy(() => import('../components/Contacts'));
