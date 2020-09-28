@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import "../styles/AboutUS.sass";
+import '../styles/AboutUS.sass';
 
-import TopSlider from "./TopSlider";
-import Menu from "./Menu";
-import HistoryBlock from "./HistoryBlock";
-import RightInfoBlock from "./RightInfoBlock";
-import Footer from "./Footer";
+import TopSlider from './TopSlider';
+import Menu from './Menu';
+import HistoryBlock from './HistoryBlock';
+import RightInfoBlock from './RightInfoBlock';
+import Footer from './Footer';
 
-import directionData from "./data/directionData";
-import directionDataUS from "./data/directionDataUS";
+import directionData from '../data/directionData';
+import directionDataUS from '../data/directionDataUS';
 
 class AboutUS extends React.Component {
   componentDidMount() {
-    document.title = "Про нас";
+    document.title = 'Про нас';
   }
 
   bookLink = () => {
-    document.getElementById("book").scrollIntoView();
+    document.getElementById('book').scrollIntoView();
   };
 
   render() {
@@ -29,9 +29,9 @@ class AboutUS extends React.Component {
         <div className="main__inner about">
           <div className="book">
             <h2 className="medium-title">
-              {lang === "us"
-                ? "The book about military orchestra"
-                : "Книга про військовий оркестр"}
+              {lang === 'us'
+                ? 'The book about military orchestra'
+                : 'Книга про військовий оркестр'}
             </h2>
             <img
               src="/images/book.gif"
@@ -42,11 +42,11 @@ class AboutUS extends React.Component {
           </div>
           <div className="secondary-bg">
             <h2 className="medium-title">
-              {lang === "us"
-                ? "The management of the orchestra"
-                : "Керівний склад оркестру"}
+              {lang === 'us'
+                ? 'The management of the orchestra'
+                : 'Керівний склад оркестру'}
             </h2>
-            {lang === "us"
+            {lang === 'us'
               ? directionDataUS.map((personData) => (
                   <div className="direction-person" key={personData.id}>
                     <img
@@ -82,7 +82,7 @@ class AboutUS extends React.Component {
           </div>
           <iframe
             src="https://e.issuu.com/anonymous-embed.html?u=orkestrdsst&d=__________________"
-            style={{ border: "none", width: "100%", height: 500 }}
+            style={{ border: 'none', width: '100%', height: 500 }}
             id="book"
             title="book"
           />
