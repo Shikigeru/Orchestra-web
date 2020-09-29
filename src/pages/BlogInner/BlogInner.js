@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import BlogInnerView from './BlogInnerView';
 import '../../styles/BlogInner.sass';
 
+import formatDate from '../../utils/formatDate';
+
 class BlogInner extends React.Component {
   constructor(props) {
     super(props);
@@ -36,13 +38,6 @@ class BlogInner extends React.Component {
       });
   }
 
-  formatDate = (postDate) => {
-    const year = postDate.slice(0, 4);
-    const month = postDate.slice(5, 7);
-    const day = postDate.slice(8, 10);
-    return `${year}.${month}.${day}`;
-  };
-
   render() {
     const { post, isLoaded, imgUrl } = this.state;
     return (
@@ -50,7 +45,7 @@ class BlogInner extends React.Component {
         post={post}
         isLoaded={isLoaded}
         imgUrl={imgUrl}
-        formatDate={this.formatDate}
+        formatDate={formatDate}
       />
     );
   }
