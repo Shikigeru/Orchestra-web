@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import Slider from 'react-slick';
 import TopSlider from '../../components/TopSlider';
-import Menu from '../../components/Menu';
+import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 
 const PhotosView = ({ sliderSettings }) => {
   return (

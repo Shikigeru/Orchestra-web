@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import TopSlider from '../../components/TopSlider';
-import Menu from '../../components/Menu';
+import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 
 const VideosView = ({ more, items, isEnabled, showMore, showLess }) => {
   const { t } = useTranslation();

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import TopSlider from '../../components/TopSlider';
-import Menu from '../../components/Menu';
-import Footer from '../../components/Footer';
+import Menu from '../../components/Menu/Menu';
+import Footer from '../../components/Footer/Footer';
 
 const BlogInnerView = ({ post, isLoaded, imgUrl, formatDate }) => {
   return (

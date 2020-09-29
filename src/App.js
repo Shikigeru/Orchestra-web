@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import AppRouter from './navigation/AppRouter';
 
 import './styles/index.sass';

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import TopSlider from '../../components/TopSlider';
-import Menu from '../../components/Menu';
+import Menu from '../../components/Menu/Menu';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 import { directionData, directionDataUS } from '../../data/directionData';
 
 const AboutUsView = ({ onBookClick }) => {

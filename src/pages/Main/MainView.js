@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import TopSlider from '../../components/TopSlider';
-import Menu from '../../components/Menu';
+import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
 import InnerSlider from '../../components/InnerSlider';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
 
 const MainView = () => {
   const { t } = useTranslation();

@@ -1,4 +1,16 @@
 export default {
+  Header: {
+    title: 'Military band of the 8th chernihiv learning center',
+    headOfOrchestra: 'Head orchestra - conductor colonel Nikolay Smal',
+  },
+  Menu: {
+    menu: 'Menu',
+    main: 'Main',
+    photos: 'Photos',
+    videos: 'Videos',
+    about: 'About',
+    contacts: 'Contacts',
+  },
   Main: {
     title: 'Military band of the 8th Chernihiv Learning Centre',
     descriptionFirstParagraph:
