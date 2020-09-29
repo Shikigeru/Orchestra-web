@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
-
-import './styles/index.sass';
 import Header from './components/Header';
 import AppRouter from './navigation/AppRouter';
+
+import './styles/index.sass';
+import i18n from './i18n';
 
 class App extends Component {
   constructor(props) {
@@ -28,12 +29,12 @@ class App extends Component {
             <img
               src="/images/ukraine.png"
               alt="ua"
-              onClick={() => this.changeLanguage('ua')}
+              onClick={() => i18n.changeLanguage('ua')}
             />
             <img
               src="/images/united-kingdom.png"
               alt="us"
-              onClick={() => this.changeLanguage('us')}
+              onClick={() => i18n.changeLanguage('en')}
             />
           </div>
           <Header lang={lang} />
