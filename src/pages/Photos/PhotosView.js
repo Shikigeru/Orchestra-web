@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Slider from 'react-slick';
-import TopSlider from '../../components/TopSlider';
+import TopSlider from '../../components/TopSlider/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
 import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';

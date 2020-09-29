@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import TopSlider from '../../components/TopSlider';
+import TopSlider from '../../components/TopSlider/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
 import Footer from '../../components/Footer/Footer';

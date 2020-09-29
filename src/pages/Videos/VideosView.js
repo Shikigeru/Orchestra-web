@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import TopSlider from '../../components/TopSlider';
+import TopSlider from '../../components/TopSlider/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
 import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';

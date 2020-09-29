@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import TopSlider from '../../components/TopSlider';
+import TopSlider from '../../components/TopSlider/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import Footer from '../../components/Footer/Footer';
 
