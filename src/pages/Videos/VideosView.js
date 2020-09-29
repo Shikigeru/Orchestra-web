@@ -65,10 +65,10 @@ const VideosView = ({ lang, more, items, isEnabled, showMore, showLess }) => {
 VideosView.propTypes = {
   lang: PropTypes.string.isRequired,
   more: PropTypes.number.isRequired,
-  items: PropTypes.arrayOf(PropTypes.shape({})),
   showMore: PropTypes.func.isRequired,
   showLess: PropTypes.func.isRequired,
   isEnabled: PropTypes.bool.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 VideosView.defaultProps = {

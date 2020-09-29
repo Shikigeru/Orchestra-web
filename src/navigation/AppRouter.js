@@ -6,7 +6,7 @@ import Main from '../pages/Main/Main';
 // React lazy loading components
 const Photos = React.lazy(() => import('../pages/Photos/Photos'));
 const Videos = React.lazy(() => import('../pages/Videos/Videos'));
-const AboutUS = React.lazy(() => import('../components/AboutUS'));
+const AboutUS = React.lazy(() => import('../pages/AboutUs/AboutUs'));
 const Contacts = React.lazy(() => import('../components/Contacts'));
 const Compositions = React.lazy(() => import('../components/Compositions'));
 const Blog = React.lazy(() => import('../components/Blog'));
