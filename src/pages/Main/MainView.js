@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import TopSlider from '../../components/TopSlider/TopSlider';
 import Menu from '../../components/Menu/Menu';
-import InfoList from '../../components/InfoList';
+import InfoList from '../../components/InfoList/InfoList';
 import InnerSlider from '../../components/InnerSlider/InnerSlider';
 import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
 import Footer from '../../components/Footer/Footer';

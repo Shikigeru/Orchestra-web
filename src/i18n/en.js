@@ -1,4 +1,5 @@
 export default {
+  // COMPONENTS
   Header: {
     title: 'Military band of the 8th chernihiv learning center',
     headOfOrchestra: 'Head orchestra - conductor colonel Nikolay Smal',
@@ -43,6 +44,17 @@ export default {
       ' Republic of France.',
     readMore: 'Read more',
   },
+  InfoList: {
+    repertoire: 'Repertoire',
+    listOfSongs: 'List of songs and musical works performed by orchestra',
+    fromClassicToContemporary: 'From classic to contemporary',
+    news: 'News',
+    liveOrchestra: 'What Chernihiv live orchestra SSTS',
+    thingsToTravel: 'Things to travel, enchanting tour and more',
+    questions: 'Questions?',
+    contactUs: 'If you do not find the information contact us',
+  },
+  // PAGES
   Main: {
     title: 'Military band of the 8th Chernihiv Learning Centre',
     descriptionFirstParagraph:
