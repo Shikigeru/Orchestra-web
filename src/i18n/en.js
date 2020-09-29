@@ -11,6 +11,38 @@ export default {
     about: 'About',
     contacts: 'Contacts',
   },
+  LeftInfoBlock: {
+    title: 'Interesting and rich history',
+    boldText:
+      'The history of Military orchestra of the 8th Chernihiv Learning' +
+      ' center began in 1950.',
+    plainText:
+      'It is one of the best creative teams of Ukraine. Its official concert' +
+      ' activity and actively promotes military, moral and cultural -' +
+      ' aesthetic education personnel of the State Special Transport service.' +
+      ' Since 2004, a military orchestra 8th Chernihiv training centre managed' +
+      ' by Head orchestra - the military conductor colonel Nikolay Smal.' +
+      ' Thanks to the hard work of military musicians creative team is a' +
+      ' laureate of Ukrainian Festival Competition "Morchyn gathers friends"' +
+      ' and awarded diplomas and degrees. A military band is well known in the' +
+      ' CIS countries and the European Union, where musicians adequately' +
+      ' represented the art of our country. In 2014 a military band 8th' +
+      ' Chernihiv training centre was awarded the Cup - "The best military' +
+      ' band Musikparade 2014 ".',
+    underlineText:
+      'The main goal of our team is spread Ukrainian art, wide' +
+      ' popularization of the creative achievements of Ukrainian people.',
+  },
+  RightInfoBlock: {
+    title: 'Carnabands Show 2019',
+    text:
+      'February 23, 24, 2019 the orchestra of the 8th Chernihiv' +
+      ' Learning Center of the State Special Service of the Ministry of' +
+      ' Defense of Ukraine participated in the 99th international' +
+      ' festival "Carnaband\'s Show 2019" in the city of Chalon-sur-Seine,' +
+      ' Republic of France.',
+    readMore: 'Read more',
+  },
   Main: {
     title: 'Military band of the 8th Chernihiv Learning Centre',
     descriptionFirstParagraph:

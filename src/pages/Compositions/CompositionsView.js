@@ -5,8 +5,7 @@ import { useTranslation } from 'react-i18next';
 import TopSlider from '../../components/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
-import HistoryBlock from '../../components/HistoryBlock';
-import RightInfoBlock from '../../components/RightInfoBlock';
+import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
 import Footer from '../../components/Footer/Footer';
 import {
   militaryEN,
@@ -60,14 +59,7 @@ const Compositions = () => {
             </ul>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-7">
-            <HistoryBlock />
-          </div>
-          <div className="col-md-5">
-            <RightInfoBlock />
-          </div>
-        </div>
+        <BottomInfoBlock />
       </div>
       <Footer />
     </main>

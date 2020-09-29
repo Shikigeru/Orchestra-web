@@ -4,9 +4,8 @@ import { useTranslation } from 'react-i18next';
 import TopSlider from '../../components/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
-import InnerSlider from '../../components/InnerSlider';
-import HistoryBlock from '../../components/HistoryBlock';
-import RightInfoBlock from '../../components/RightInfoBlock';
+import InnerSlider from '../../components/InnerSlider/InnerSlider';
+import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
 import Footer from '../../components/Footer/Footer';
 
 const MainView = () => {
@@ -26,14 +25,7 @@ const MainView = () => {
           <p>{t('Main.descriptionSecondParagraph')}</p>
           <p>{t('Main.descriptionThirdParagraph')}</p>
         </div>
-        <div className="row">
-          <div className="col-md-7">
-            <HistoryBlock />
-          </div>
-          <div className="col-md-5">
-            <RightInfoBlock />
-          </div>
-        </div>
+        <BottomInfoBlock />
       </div>
       <Footer />
     </main>

@@ -5,8 +5,7 @@ import Slider from 'react-slick';
 import TopSlider from '../../components/TopSlider';
 import Menu from '../../components/Menu/Menu';
 import InfoList from '../../components/InfoList';
-import HistoryBlock from '../../components/HistoryBlock';
-import RightInfoBlock from '../../components/RightInfoBlock';
+import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
 import Footer from '../../components/Footer/Footer';
 
 const PhotosView = ({ sliderSettings }) => {
@@ -33,14 +32,7 @@ const PhotosView = ({ sliderSettings }) => {
             </a>
           </div>
         </Slider>
-        <div className="row">
-          <div className="col-md-7">
-            <HistoryBlock />
-          </div>
-          <div className="col-md-5">
-            <RightInfoBlock />
-          </div>
-        </div>
+        <BottomInfoBlock />
       </div>
       <Footer />
     </main>
