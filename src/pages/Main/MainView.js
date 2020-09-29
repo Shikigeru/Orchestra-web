@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import TopSlider from '../../components/TopSlider';
@@ -11,6 +11,9 @@ import Footer from '../../components/Footer';
 
 const MainView = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    document.title = t('Main.title');
+  });
   return (
     <main className="main">
       <TopSlider />

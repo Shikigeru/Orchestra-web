@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import VideosView from './VideosView';
 import videoData from '../../data/videoData';
 
@@ -13,10 +12,6 @@ export class Videos extends Component {
       more: 4,
       isEnabled: true,
     };
-  }
-
-  componentDidMount() {
-    document.title = 'Відео';
   }
 
   showMore = () => {
@@ -43,11 +38,9 @@ export class Videos extends Component {
   };
 
   render() {
-    const { lang } = this.props;
     const { items, more, isEnabled } = this.state;
     return (
       <VideosView
-        lang={lang}
         items={items}
         more={more}
         isEnabled={isEnabled}
@@ -57,9 +50,5 @@ export class Videos extends Component {
     );
   }
 }
-
-Videos.propTypes = {
-  lang: PropTypes.string.isRequired,
-};
 
 export default Videos;

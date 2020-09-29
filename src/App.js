@@ -7,21 +7,7 @@ import './styles/index.sass';
 import i18n from './i18n';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lang: 'ua',
-    };
-  }
-
-  changeLanguage(l) {
-    this.setState({
-      lang: l,
-    });
-  }
-
   render() {
-    const { lang } = this.state;
     return (
       <div className="app" style={{ height: '100%' }}>
         <div className="container">
@@ -37,8 +23,8 @@ class App extends Component {
               onClick={() => i18n.changeLanguage('en')}
             />
           </div>
-          <Header lang={lang} />
-          <AppRouter lang={lang} />
+          <Header />
+          <AppRouter />
         </div>
       </div>
     );

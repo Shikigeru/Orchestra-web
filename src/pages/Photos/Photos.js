@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import '../../../node_modules/slick-carousel/slick/slick.css';
 import '../../../node_modules/slick-carousel/slick/slick-theme.css';
@@ -34,13 +33,8 @@ class Photos extends React.Component {
     if (docWidth < 776) {
       settings.slidesToShow = 1;
     }
-    const { lang } = this.props;
-    return <PhotosView lang={lang} sliderSettings={settings} />;
+    return <PhotosView sliderSettings={settings} />;
   }
 }
-
-Photos.propTypes = {
-  lang: PropTypes.string.isRequired,
-};
 
 export default Photos;

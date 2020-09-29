@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import TopSlider from '../../components/TopSlider';
 import Menu from '../../components/Menu';
@@ -7,19 +8,19 @@ import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
 import Footer from '../../components/Footer';
 
-const VideosView = ({ lang, more, items, isEnabled, showMore, showLess }) => {
+const VideosView = ({ more, items, isEnabled, showMore, showLess }) => {
+  const { t } = useTranslation();
+  useEffect(() => {
+    document.title = t('Videos.title');
+  });
   return (
     <main className="main">
       <TopSlider />
-      <Menu lang={lang} />
+      <Menu />
       <div className="main__inner">
-        <InfoList lang={lang} />
+        <InfoList />
         <div className="video-block secondary-bg">
-          <h2 className="medium-title">
-            {lang === 'us'
-              ? 'Orchestra performances across Ukraine and abroad '
-              : 'Виступи оркестру по всій Україні та далеко за її межами'}
-          </h2>
+          <h2 className="medium-title">{t('Videos.orchestraPerfomances')}</h2>
           <div className="row">
             {items
               .map((video) => (
@@ -36,24 +37,24 @@ const VideosView = ({ lang, more, items, isEnabled, showMore, showLess }) => {
               onClick={() => showMore()}
               className={`prim-btn load-more ${!isEnabled && 'hidden'}`}>
               <i className="fa fa-arrow-circle-o-down" aria-hidden="true" />
-              {lang === 'us' ? 'Load More' : 'Завантажити ще'}
+              {t('Videos.loadMore')}
             </button>
             <button
               type="button"
               onClick={() => showLess()}
               className={`prim-btn load-more ${isEnabled && 'hidden'}`}>
               <i className="fa fa-arrow-circle-o-up" aria-hidden="true" />
-              {lang === 'us' ? 'Hide' : 'Згорнути'}
+              {t('Videos.hide')}
             </button>
           </div>
         </div>
 
         <div className="row">
           <div className="col-md-7">
-            <HistoryBlock lang={lang} />
+            <HistoryBlock />
           </div>
           <div className="col-md-5">
-            <RightInfoBlock lang={lang} />
+            <RightInfoBlock />
           </div>
         </div>
       </div>
@@ -63,7 +64,6 @@ const VideosView = ({ lang, more, items, isEnabled, showMore, showLess }) => {
 };
 
 VideosView.propTypes = {
-  lang: PropTypes.string.isRequired,
   more: PropTypes.number.isRequired,
   showMore: PropTypes.func.isRequired,
   showLess: PropTypes.func.isRequired,

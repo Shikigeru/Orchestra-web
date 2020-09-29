@@ -1,5 +1,6 @@
 export default {
   Main: {
+    title: 'Military band of the 8th Chernihiv Learning Centre',
     descriptionFirstParagraph:
       'Without exaggeration, it is safe to call our military orchestra' +
       ' of the 8th Chernihiv Learning Center a calling card of the State' +
@@ -18,5 +19,16 @@ export default {
       ' artistic inputs to the Ukrainian audience, as well as on the scenes' +
       ' of the states of the world, the collective gained recognition of the' +
       ' demanding audience of the international community.',
+  },
+  Videos: {
+    title: 'Videos',
+    loadMore: 'Load More',
+    hide: 'Hide',
+    orchestraPerfomances: 'Orchestra performances across Ukraine and abroad',
+  },
+  AboutUs: {
+    title: 'About us',
+    bookAboutMilitaryOrchestra: 'The book about military orchestra',
+    managementOfTheOrchestra: 'The management of the orchestra',
   },
 };

@@ -1,22 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 import TopSlider from '../../components/TopSlider';
 import Menu from '../../components/Menu';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
 import Footer from '../../components/Footer';
+import directionData from '../../data/directionData';
+import directionDataUS from '../../data/directionDataUS';
 
-const AboutUsView = ({ lang, directionData, onBookClick }) => {
+const AboutUsView = ({ onBookClick }) => {
+  const { t } = useTranslation();
+  const { language } = i18next;
+  const [direction, setDirection] = useState(directionData);
+  useEffect(() => {
+    document.title = t('AboutUs.title');
+  });
+  useEffect(() => {
+    if (language === 'en') {
+      setDirection(directionDataUS);
+    } else {
+      setDirection(directionData);
+    }
+  }, [language]);
   return (
     <main className="main">
       <TopSlider />
-      <Menu lang={lang} />
+      <Menu />
       <div className="main__inner about">
         <div className="book">
           <h2 className="medium-title">
-            {lang === 'us'
-              ? 'The book about military orchestra'
-              : 'Книга про військовий оркестр'}
+            {t('AboutUs.bookAboutMilitaryOrchestra')}
           </h2>
           <img
             src="/images/book.gif"
@@ -27,11 +42,9 @@ const AboutUsView = ({ lang, directionData, onBookClick }) => {
         </div>
         <div className="secondary-bg">
           <h2 className="medium-title">
-            {lang === 'us'
-              ? 'The management of the orchestra'
-              : 'Керівний склад оркестру'}
+            {t('AboutUs.managementOfTheOrchestra')}
           </h2>
-          {directionData.map((person) => (
+          {direction.map((person) => (
             <div className="direction-person" key={person.id}>
               <img src={person.picture} alt="dir-1" className="direction-img" />
               <div className="direction-text">
@@ -53,10 +66,10 @@ const AboutUsView = ({ lang, directionData, onBookClick }) => {
 
         <div className="row">
           <div className="col-md-7">
-            <HistoryBlock lang={lang} />
+            <HistoryBlock />
           </div>
           <div className="col-md-5">
-            <RightInfoBlock lang={lang} />
+            <RightInfoBlock />
           </div>
         </div>
       </div>
@@ -66,8 +79,6 @@ const AboutUsView = ({ lang, directionData, onBookClick }) => {
 };
 
 AboutUsView.propTypes = {
-  lang: PropTypes.string.isRequired,
-  directionData: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   onBookClick: PropTypes.func.isRequired,
 };
 
