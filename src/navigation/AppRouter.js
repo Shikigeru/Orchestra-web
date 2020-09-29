@@ -11,7 +11,7 @@ const Compositions = React.lazy(() =>
   import('../pages/Compositions/Compositions'),
 );
 const Blog = React.lazy(() => import('../pages/Blog/Blog'));
-const BlogInner = React.lazy(() => import('../components/BlogInner'));
+const BlogInner = React.lazy(() => import('../pages/BlogInner/BlogInner'));
 
 const AppRouter = () => {
   return (
