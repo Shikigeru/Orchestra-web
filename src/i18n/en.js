@@ -47,4 +47,7 @@ export default {
     marchingRepertoire: 'Official - marching repertoire',
     repertoireOfSpeech: 'The repertoire of speech',
   },
+  Blog: {
+    title: 'Blog',
+  },
 };

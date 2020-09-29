@@ -49,4 +49,7 @@ export default {
     marchingRepertoire: 'Службово - стройовий репертуар',
     repertoireOfSpeech: 'Репертуар виступу',
   },
+  Blog: {
+    title: 'Блог',
+  },
 };

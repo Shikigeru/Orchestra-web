@@ -10,7 +10,7 @@ const Contacts = React.lazy(() => import('../pages/Contacts/Contacts'));
 const Compositions = React.lazy(() =>
   import('../pages/Compositions/Compositions'),
 );
-const Blog = React.lazy(() => import('../components/Blog'));
+const Blog = React.lazy(() => import('../pages/Blog/Blog'));
 const BlogInner = React.lazy(() => import('../components/BlogInner'));
 
 const AppRouter = () => {
