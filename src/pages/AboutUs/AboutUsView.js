@@ -7,8 +7,7 @@ import Menu from '../../components/Menu';
 import HistoryBlock from '../../components/HistoryBlock';
 import RightInfoBlock from '../../components/RightInfoBlock';
 import Footer from '../../components/Footer';
-import directionData from '../../data/directionData';
-import directionDataUS from '../../data/directionDataUS';
+import { directionData, directionDataUS } from '../../data/directionData';
 
 const AboutUsView = ({ onBookClick }) => {
   const { t } = useTranslation();
@@ -45,7 +44,7 @@ const AboutUsView = ({ onBookClick }) => {
             {t('AboutUs.managementOfTheOrchestra')}
           </h2>
           {direction.map((person) => (
-            <div className="direction-person" key={person.id}>
+            <div className="direction-person" key={person.name}>
               <img src={person.picture} alt="dir-1" className="direction-img" />
               <div className="direction-text">
                 <p>{person.post}</p>

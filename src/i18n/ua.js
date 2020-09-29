@@ -44,4 +44,9 @@ export default {
     socialMedia: 'Ми у соцмережах',
     coordinates: 'Наші координати:',
   },
+  Compositions: {
+    title: 'Репертуар',
+    marchingRepertoire: 'Службово - стройовий репертуар',
+    repertoireOfSpeech: 'Репертуар виступу',
+  },
 };

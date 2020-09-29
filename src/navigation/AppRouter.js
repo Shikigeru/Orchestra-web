@@ -7,7 +7,9 @@ const Photos = React.lazy(() => import('../pages/Photos/Photos'));
 const Videos = React.lazy(() => import('../pages/Videos/Videos'));
 const AboutUs = React.lazy(() => import('../pages/AboutUs/AboutUs'));
 const Contacts = React.lazy(() => import('../pages/Contacts/Contacts'));
-const Compositions = React.lazy(() => import('../components/Compositions'));
+const Compositions = React.lazy(() =>
+  import('../pages/Compositions/Compositions'),
+);
 const Blog = React.lazy(() => import('../components/Blog'));
 const BlogInner = React.lazy(() => import('../components/BlogInner'));
 

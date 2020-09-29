@@ -42,4 +42,9 @@ export default {
     socialMedia: 'Follow us on social media',
     coordinates: 'Coordinates:',
   },
+  Compositions: {
+    title: 'Repertoire',
+    marchingRepertoire: 'Official - marching repertoire',
+    repertoireOfSpeech: 'The repertoire of speech',
+  },
 };
