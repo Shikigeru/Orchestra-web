@@ -33,4 +33,15 @@ export default {
     bookAboutMilitaryOrchestra: 'Книга про військовий оркестр',
     managementOfTheOrchestra: 'Керівний склад оркестру',
   },
+  Contacts: {
+    title: 'Контакти',
+    serviceName: 'Державна спеціальна служба транспорту',
+    contacts: 'Контактна інформація',
+    postalCode: 'Поштовий індекс',
+    address: 'Адреса: Україна, місто Чернігів, вулиця Івана Мазепи 18',
+    phone: 'Телефон',
+    email: 'Поштова скринька',
+    socialMedia: 'Ми у соцмережах',
+    coordinates: 'Наші координати:',
+  },
 };

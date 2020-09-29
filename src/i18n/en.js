@@ -31,4 +31,15 @@ export default {
     bookAboutMilitaryOrchestra: 'The book about military orchestra',
     managementOfTheOrchestra: 'The management of the orchestra',
   },
+  Contacts: {
+    title: 'Contacts',
+    serviceName: 'State special transport service',
+    contacts: 'Contacts',
+    postalCode: 'Postal Code',
+    address: 'Address: Ukraine, Chernihiv city, Ivana Mazepy Street 18',
+    phone: 'Phone',
+    email: 'Email',
+    socialMedia: 'Follow us on social media',
+    coordinates: 'Coordinates:',
+  },
 };
