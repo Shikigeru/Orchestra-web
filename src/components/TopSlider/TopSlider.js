@@ -10,7 +10,7 @@ const TopSlider = () => {
 
   useEffect(() => {
     setScreenWidth(document.documentElement.clientWidth);
-  });
+  }, []);
 
   const settings = {
     dots: false,

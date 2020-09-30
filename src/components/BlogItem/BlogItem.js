@@ -14,7 +14,7 @@ const BlogItem = ({ post }) => {
     } else {
       setImgUrl(null);
     }
-  }, []);
+  }, [post.better_featured_image]);
 
   return (
     <div className="blog__item secondary-bg">

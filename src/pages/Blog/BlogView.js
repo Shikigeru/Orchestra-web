@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import TopSlider from '../../components/TopSlider/TopSlider';
-import Menu from '../../components/Menu/Menu';
-import Footer from '../../components/Footer/Footer';
 import BlogItem from '../../components/BlogItem/BlogItem';
+import MainLayout from '../../layouts/MainLayout';
 
 const BlogView = ({ isLoaded, posts }) => {
   const { t } = useTranslation();
@@ -14,18 +12,13 @@ const BlogView = ({ isLoaded, posts }) => {
   });
 
   return (
-    <main className="blog main">
-      <TopSlider />
-      <Menu />
-      <div className="main__inner">
-        {isLoaded ? (
-          posts.map((post) => <BlogItem post={post} key={post.id} />)
-        ) : (
-          <div className="loader" />
-        )}
-      </div>
-      <Footer />
-    </main>
+    <MainLayout>
+      {isLoaded ? (
+        posts.map((post) => <BlogItem post={post} key={post.id} />)
+      ) : (
+        <div className="loader" />
+      )}
+    </MainLayout>
   );
 };
 

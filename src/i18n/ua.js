@@ -14,7 +14,7 @@ export default {
     contacts: 'Контакти',
   },
   LeftInfoBlock: {
-    title: 'Interesting and rich history',
+    title: 'Цікава та багата історія',
     boldText:
       'Військовий оркестр 8-го навчального Чернігівського центру розпочав' +
       ' свою творчу біографію у 1950 році.',
