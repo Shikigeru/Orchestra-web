@@ -14,7 +14,6 @@ class Photos extends React.Component {
   }
 
   componentDidMount() {
-    document.title = 'Фото';
     this.setState({
       docWidth: document.documentElement.clientWidth,
     });

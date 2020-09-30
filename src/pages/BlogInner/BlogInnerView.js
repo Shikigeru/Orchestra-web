@@ -1,45 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import TopSlider from '../../components/TopSlider/TopSlider';
-import Menu from '../../components/Menu/Menu';
-import Footer from '../../components/Footer/Footer';
+import MainLayout from '../../layouts/MainLayout';
 
 const BlogInnerView = ({ post, isLoaded, imgUrl, formatDate }) => {
   return (
-    <main className="main">
-      <TopSlider />
-      <Menu />
-      <div className="main__inner">
-        <div className="secondary-bg blog__inner">
-          {isLoaded ? (
-            <div>
-              <p className="blog__inner__date">
-                Дата публікації: {formatDate(post.date)}
-              </p>
-              <h1 className="medium-title">{post.title.rendered}</h1>
-              <div className="image">
-                {imgUrl ? <img src={imgUrl} alt={post.title.rendered} /> : ''}
-              </div>
-              <p
-                className="blog__inner__text"
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-              />
-              <div className="back-link">
-                <NavLink to="/blog" className="prim-btn back">
-                  <i className="fa fa-arrow-circle-o-left" aria-hidden="true" />
-                  Назад
-                </NavLink>
-              </div>
+    <MainLayout>
+      <div className="secondary-bg blog__inner">
+        {isLoaded ? (
+          <div>
+            <p className="blog__inner__date">
+              Дата публікації: {formatDate(post.date)}
+            </p>
+            <h1 className="medium-title">{post.title.rendered}</h1>
+            <div className="image">
+              {imgUrl ? <img src={imgUrl} alt={post.title.rendered} /> : ''}
             </div>
-          ) : (
-            <div className="loader" />
-          )}
-        </div>
+            <p
+              className="blog__inner__text"
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+            />
+            <div className="back-link">
+              <NavLink to="/blog" className="prim-btn back">
+                <i className="fa fa-arrow-circle-o-left" aria-hidden="true" />
+                Назад
+              </NavLink>
+            </div>
+          </div>
+        ) : (
+          <div className="loader" />
+        )}
       </div>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-const InfoListItem = ({ title, image, subTitle, text }) => {
+const InfoListItem = ({ title, image, subTitle, text, link }) => {
   return (
     <div className="col-md-4 card-container">
-      <NavLink to="/compositions" className="info-card">
+      <NavLink to={link} className="info-card">
         <h2>{title}</h2>
         <div className="item">
           <div className="img-container">{image}</div>
@@ -24,6 +24,7 @@ InfoListItem.propTypes = {
   image: PropTypes.node.isRequired,
   subTitle: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default InfoListItem;
