@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-
-import TopSlider from '../../components/TopSlider/TopSlider';
-import Menu from '../../components/Menu/Menu';
-import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
-import Footer from '../../components/Footer/Footer';
+import MainLayout from '../../layouts/MainLayout';
 
 const ContactsView = () => {
   const { t } = useTranslation();
@@ -26,83 +22,77 @@ const ContactsView = () => {
   });
 
   return (
-    <main className="main">
-      <TopSlider />
-      <Menu />
-      <div className="main__inner">
-        <div className="contacts">
-          <div className="dsst-logo">
-            <h2 className="medium-title">{t('Contacts.serviceName')}</h2>
-            <img src="/images/DSST.png" alt="dsst" />
-          </div>
-          <div className="contacts__info secondary-bg">
-            <h2 className="medium-title">{t('Contacts.contacts')}</h2>
-            <div className="row">
-              <div className="col-md-8 cont-col">
-                <div className="contacts__info__item">
-                  <div className="icon-holder">
-                    <i className="fa fa-envelope-o" aria-hidden="true" />
-                  </div>
-                  {`${t('Contacts.postalCode')}: 14017`}
+    <MainLayout>
+      <div className="contacts">
+        <div className="dsst-logo">
+          <h2 className="medium-title">{t('Contacts.serviceName')}</h2>
+          <img src="/images/DSST.png" alt="dsst" />
+        </div>
+        <div className="contacts__info secondary-bg">
+          <h2 className="medium-title">{t('Contacts.contacts')}</h2>
+          <div className="row">
+            <div className="col-md-8 cont-col">
+              <div className="contacts__info__item">
+                <div className="icon-holder">
+                  <i className="fa fa-envelope-o" aria-hidden="true" />
                 </div>
-                <div className="contacts__info__item">
-                  <div className="icon-holder">
-                    <i className="fa fa-map-marker" aria-hidden="true" />
-                  </div>
-                  {t('Contacts.address')}
-                </div>
-                <div className="contacts__info__item">
-                  <div className="icon-holder">
-                    <i className="fa fa-phone" aria-hidden="true" />
-                  </div>
-                  {`${t('Contacts.phone')}: +38 (0462) 67-70-22`}
-                </div>
-                <div className="contacts__info__item">
-                  <div className="icon-holder">
-                    <i className="fa fa-envelope" aria-hidden="true" />
-                  </div>
-                  <a href="mailto:orkestr_dsst@i.ua" className="main-link">
-                    &nbsp;{`${t('Contacts.email')}: orkestr_dsst@i.ua`}
-                  </a>
-                </div>
-                <h2 className="medium-title">{t('Contacts.socialMedia')}</h2>
-                <div className="social__media">
-                  <a href="https://www.facebook.com/ChernihivMilitaryOrchestra">
-                    <div className="icon-holder">
-                      <i className="fa fa-facebook" aria-hidden="true" />
-                    </div>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ">
-                    <div className="icon-holder">
-                      <i className="fa fa-youtube-play" aria-hidden="true" />
-                    </div>
-                  </a>
-                </div>
+                {`${t('Contacts.postalCode')}: 14017`}
               </div>
-              <div className="col-md-4">
-                <div className="orch-logo">
-                  <img src="/images/orchestra-logo.png" alt="orch-logo" />
+              <div className="contacts__info__item">
+                <div className="icon-holder">
+                  <i className="fa fa-map-marker" aria-hidden="true" />
                 </div>
+                {t('Contacts.address')}
               </div>
-              <div className="col-md-12">
-                <h2 className="medium-title coords">
-                  {t('Contacts.coordinates')}
-                </h2>
-                <iframe
-                  className="map"
-                  src={mapLink}
-                  width="100%"
-                  height="450"
-                  title="map"
-                />
+              <div className="contacts__info__item">
+                <div className="icon-holder">
+                  <i className="fa fa-phone" aria-hidden="true" />
+                </div>
+                {`${t('Contacts.phone')}: +38 (0462) 67-70-22`}
               </div>
+              <div className="contacts__info__item">
+                <div className="icon-holder">
+                  <i className="fa fa-envelope" aria-hidden="true" />
+                </div>
+                <a href="mailto:orkestr_dsst@i.ua" className="main-link">
+                  &nbsp;{`${t('Contacts.email')}: orkestr_dsst@i.ua`}
+                </a>
+              </div>
+              <h2 className="medium-title">{t('Contacts.socialMedia')}</h2>
+              <div className="social__media">
+                <a href="https://www.facebook.com/ChernihivMilitaryOrchestra">
+                  <div className="icon-holder">
+                    <i className="fa fa-facebook" aria-hidden="true" />
+                  </div>
+                </a>
+                <a href="https://www.youtube.com/channel/UC0m-g6stcTCVynYL6T4IDsQ">
+                  <div className="icon-holder">
+                    <i className="fa fa-youtube-play" aria-hidden="true" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="orch-logo">
+                <img src="/images/orchestra-logo.png" alt="orch-logo" />
+              </div>
+            </div>
+            <div className="col-md-12">
+              <h2 className="medium-title coords">
+                {t('Contacts.coordinates')}
+              </h2>
+              <iframe
+                className="map"
+                src={mapLink}
+                width="100%"
+                height="450"
+                title="map"
+              />
             </div>
           </div>
         </div>
-        <BottomInfoBlock />
       </div>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 

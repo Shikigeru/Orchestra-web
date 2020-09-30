@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import TopSlider from '../../components/TopSlider/TopSlider';
-import Menu from '../../components/Menu/Menu';
-import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
-import Footer from '../../components/Footer/Footer';
 import { directionData, directionDataUS } from '../../data/directionData';
+import MainLayout from '../../layouts/MainLayout';
 
 const AboutUsView = ({ onBookClick }) => {
   const { t } = useTranslation();
@@ -23,9 +20,7 @@ const AboutUsView = ({ onBookClick }) => {
     }
   }, [language]);
   return (
-    <main className="main">
-      <TopSlider />
-      <Menu />
+    <MainLayout>
       <div className="main__inner about">
         <div className="book">
           <h2 className="medium-title">
@@ -61,10 +56,8 @@ const AboutUsView = ({ onBookClick }) => {
           id="book"
           title="book"
         />
-        <BottomInfoBlock />
       </div>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 

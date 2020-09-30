@@ -15,32 +15,32 @@ const BlogItem = ({ post }) => {
       setImgUrl(null);
     }
   }, []);
-  const {
-    rendered: { title, content },
-    id,
-    date,
-  } = post;
+
   return (
     <div className="blog__item secondary-bg">
-      <NavLink to={`/blog/${id}`} className="thumb-img">
+      <NavLink to={`/blog/${post?.id}`} className="thumb-img">
         <div className="blog__item__image">
-          {imgUrl ? <img src={imgUrl} alt={title} /> : ''}
+          {imgUrl ? <img src={imgUrl} alt={post.title.rendered} /> : ''}
         </div>
       </NavLink>
       <div className="blog__item__preview-text">
-        <NavLink className="blog__item__title" to={`/blog/${id}`}>
-          <h2>{title}</h2>
+        <NavLink className="blog__item__title" to={`/blog/${post?.id}`}>
+          <h2>{post?.title?.rendered}</h2>
         </NavLink>
-        <p className="blog__item__date">Дата публікації: {formatDate(date)}</p>
+        <p className="blog__item__date">
+          Дата публікації: {formatDate(post?.date)}
+        </p>
         <p
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html:
-              content.length > 200 ? `${content.slice(0, 200)}...` : content,
+              post?.content?.rendered.length > 200
+                ? `${post?.content?.rendered.slice(0, 200)}...`
+                : post?.content?.rendered,
           }}
         />
         <div className="center">
-          <NavLink className="prim-btn" to={`/blog/${id}`}>
+          <NavLink className="prim-btn" to={`/blog/${post?.id}`}>
             <i className="fa fa-info-circle" aria-hidden="true" />
             ДЕТАЛЬНІШЕ
           </NavLink>
@@ -61,11 +61,13 @@ BlogItem.propTypes = {
         }),
       }),
     }),
-    rendered: PropTypes.shape({
-      title: PropTypes.string,
-      content: PropTypes.string,
+    title: PropTypes.shape({
+      rendered: PropTypes.string,
     }),
-    id: PropTypes.string,
+    content: PropTypes.shape({
+      rendered: PropTypes.string,
+    }),
+    id: PropTypes.number,
     date: PropTypes.string,
   }).isRequired,
 };

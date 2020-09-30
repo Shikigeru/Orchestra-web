@@ -1,18 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-
-import TopSlider from '../../components/TopSlider/TopSlider';
-import Menu from '../../components/Menu/Menu';
-import InfoList from '../../components/InfoList/InfoList';
-import BottomInfoBlock from '../../components/BottomInfoBlock/BottomInfoBlock';
-import Footer from '../../components/Footer/Footer';
 import {
   militaryEN,
   militaryUA,
   perfEN,
   perfUA,
 } from '../../data/compositions';
+import MainLayout from '../../layouts/MainLayout';
 
 const Compositions = () => {
   const { t } = useTranslation();
@@ -34,35 +29,28 @@ const Compositions = () => {
   }, [language]);
 
   return (
-    <main className="main">
-      <TopSlider />
-      <Menu />
-      <div className="main__inner">
-        <InfoList />
-        <div className="secondary-bg">
-          <div>
-            <h2 className="medium-title center">
-              {t('Compositions.marchingRepertoire')}
-            </h2>
-            <ul className="bold-list">
-              {military.map((composition) => (
-                <li key={composition}>{composition}</li>
-              ))}
-            </ul>
-            <h2 className="medium-title center">
-              {t('Compositions.repertoireOfSpeech')}
-            </h2>
-            <ul className="bold-list">
-              {perf.map((composition) => (
-                <li key={composition}>{composition}</li>
-              ))}
-            </ul>
-          </div>
+    <MainLayout>
+      <div className="secondary-bg">
+        <div>
+          <h2 className="medium-title center">
+            {t('Compositions.marchingRepertoire')}
+          </h2>
+          <ul className="bold-list">
+            {military.map((composition) => (
+              <li key={composition}>{composition}</li>
+            ))}
+          </ul>
+          <h2 className="medium-title center">
+            {t('Compositions.repertoireOfSpeech')}
+          </h2>
+          <ul className="bold-list">
+            {perf.map((composition) => (
+              <li key={composition}>{composition}</li>
+            ))}
+          </ul>
         </div>
-        <BottomInfoBlock />
       </div>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 
